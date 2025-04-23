@@ -1,0 +1,23 @@
+name: Giphy PR Comment Template
+
+on:
+  workflow_call:
+    secrets:
+      GITHUB_TOKEN:
+        required: true
+      GIPHY_API_KEY:
+        required: true
+
+jobs:
+  giphy-comment:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Post Giphy Comment
+        uses: devops-airist/template-docker-action-pr-giphy-comment@v1.0.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          giphy-api-key: ${{ secrets.GIPHY_API_KEY }}
