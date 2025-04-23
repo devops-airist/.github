@@ -1,0 +1,8 @@
+{
+    "name": "DevOps NodeJS CI",
+    "description": "DevOps Organization NodeJS Init CI starter workflow.",
+    "iconName": "message-circle",
+    "categories": [
+        "NPM Config"
+    ]
+  }

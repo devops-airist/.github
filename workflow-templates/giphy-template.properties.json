@@ -1,6 +1,0 @@
-{
-    "name": "Giphy Pull Request Comment",
-    "description": "Automatically post a fun Giphy comment whenever someone opens a pull request.",
-    "iconName": "message-circle",
-    "categories": ["communication", "fun", "pull-request"]
-}
